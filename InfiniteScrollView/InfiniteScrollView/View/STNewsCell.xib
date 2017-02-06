@@ -18,11 +18,17 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FBx-LS-hMR">
                     <rect key="frame" x="0.0" y="0.0" width="536" height="297"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" alpha="0.25" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 今天天气很好" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4m5-q2-fQO">
+                <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="quz-Rb-jB9">
                     <rect key="frame" x="0.0" y="260" width="536" height="37"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="37" id="190-MG-edn"/>
+                        <constraint firstAttribute="height" constant="37" id="OZK-C3-71s"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88y-ha-bWu">
+                    <rect key="frame" x="0.0" y="260" width="536" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="xmj-VS-sqV"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -32,20 +38,23 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="FBx-LS-hMR" firstAttribute="top" secondItem="wIQ-yC-reH" secondAttribute="top" id="AgX-8z-vbh"/>
-                <constraint firstItem="4m5-q2-fQO" firstAttribute="leading" secondItem="wIQ-yC-reH" secondAttribute="leading" id="CNi-8s-mHe"/>
-                <constraint firstAttribute="trailing" secondItem="4m5-q2-fQO" secondAttribute="trailing" id="LId-cR-5Vi"/>
+                <constraint firstItem="88y-ha-bWu" firstAttribute="leading" secondItem="wIQ-yC-reH" secondAttribute="leading" id="Arg-5G-tZk"/>
+                <constraint firstItem="quz-Rb-jB9" firstAttribute="leading" secondItem="wIQ-yC-reH" secondAttribute="leading" id="KIO-fG-nTU"/>
+                <constraint firstAttribute="bottom" secondItem="88y-ha-bWu" secondAttribute="bottom" id="Mti-O9-Map"/>
                 <constraint firstAttribute="bottom" secondItem="FBx-LS-hMR" secondAttribute="bottom" id="NQS-5m-aSl"/>
+                <constraint firstAttribute="trailing" secondItem="88y-ha-bWu" secondAttribute="trailing" id="OCE-7f-jp2"/>
                 <constraint firstItem="FBx-LS-hMR" firstAttribute="leading" secondItem="wIQ-yC-reH" secondAttribute="leading" id="U2H-HE-8EI"/>
                 <constraint firstAttribute="trailing" secondItem="FBx-LS-hMR" secondAttribute="trailing" id="WjS-Hv-TqJ"/>
-                <constraint firstAttribute="bottom" secondItem="4m5-q2-fQO" secondAttribute="bottom" id="nHI-iN-R5o"/>
+                <constraint firstAttribute="bottom" secondItem="quz-Rb-jB9" secondAttribute="bottom" id="q89-rF-z8k"/>
+                <constraint firstAttribute="trailing" secondItem="quz-Rb-jB9" secondAttribute="trailing" id="xws-d6-SRd"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="iconView" destination="FBx-LS-hMR" id="tdp-0y-NcH"/>
-                <outlet property="titleLabel" destination="4m5-q2-fQO" id="PeU-yG-2DD"/>
+                <outlet property="titleLabel" destination="88y-ha-bWu" id="FhQ-5L-7dh"/>
             </connections>
-            <point key="canvasLocation" x="415" y="-88.5"/>
+            <point key="canvasLocation" x="53" y="-85"/>
         </view>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
