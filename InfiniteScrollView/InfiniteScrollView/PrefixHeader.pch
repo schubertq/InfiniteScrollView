@@ -1,0 +1,32 @@
+//
+//  PrefixHeader.pch
+//  InfiniteScrollView
+//
+//  Created by schubert on 2016/2/20.
+//  Copyright © 2016年 schubertq. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+// 颜色
+#define STColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define STColorRGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+
+// 随机色
+#define STRandomColor STColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+// 生成一个字符串
+#define NSString(...) [NSString stringWithFormat:__VA_ARGS__]
+// 屏幕尺寸
+#define STScreenW [UIScreen mainScreen].bounds.size.width
+#define STScreenH [UIScreen mainScreen].bounds.size.height
+
+#endif
+#endif /* PrefixHeader_pch */

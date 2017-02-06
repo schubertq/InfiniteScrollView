@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="STNewsCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="wIQ-yC-reH" customClass="STNewsCell">
+            <rect key="frame" x="0.0" y="0.0" width="536" height="297"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FBx-LS-hMR">
+                    <rect key="frame" x="0.0" y="0.0" width="536" height="297"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.25" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 今天天气很好" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4m5-q2-fQO">
+                    <rect key="frame" x="0.0" y="260" width="536" height="37"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="190-MG-edn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="FBx-LS-hMR" firstAttribute="top" secondItem="wIQ-yC-reH" secondAttribute="top" id="AgX-8z-vbh"/>
+                <constraint firstItem="4m5-q2-fQO" firstAttribute="leading" secondItem="wIQ-yC-reH" secondAttribute="leading" id="CNi-8s-mHe"/>
+                <constraint firstAttribute="trailing" secondItem="4m5-q2-fQO" secondAttribute="trailing" id="LId-cR-5Vi"/>
+                <constraint firstAttribute="bottom" secondItem="FBx-LS-hMR" secondAttribute="bottom" id="NQS-5m-aSl"/>
+                <constraint firstItem="FBx-LS-hMR" firstAttribute="leading" secondItem="wIQ-yC-reH" secondAttribute="leading" id="U2H-HE-8EI"/>
+                <constraint firstAttribute="trailing" secondItem="FBx-LS-hMR" secondAttribute="trailing" id="WjS-Hv-TqJ"/>
+                <constraint firstAttribute="bottom" secondItem="4m5-q2-fQO" secondAttribute="bottom" id="nHI-iN-R5o"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconView" destination="FBx-LS-hMR" id="tdp-0y-NcH"/>
+                <outlet property="titleLabel" destination="4m5-q2-fQO" id="PeU-yG-2DD"/>
+            </connections>
+            <point key="canvasLocation" x="415" y="-88.5"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
